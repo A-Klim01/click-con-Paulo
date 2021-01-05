@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/A-Klim01/click-con-Paulo#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "if-env": "^1.0.4"
