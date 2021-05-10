@@ -14,6 +14,8 @@ class Game extends React.Component{
     }
    //component DidMount
    componentDidMount(){
+       console.log('2')
+    //    this.shuffleData(this.state.data)
        this.setState({ data: this.shuffleData(this.state.data)})
    }
    
@@ -54,6 +56,10 @@ class Game extends React.Component{
         data[a] = temp
         i--;
     }
+    return data;
+    // this.setState({
+    //     data: data
+    // })
    }
 
    //function to handle item click -click.js
@@ -77,7 +83,8 @@ class Game extends React.Component{
 
    //render return
    render(){
-
+       console.log('1')
+    console.log(this.state.data)
    
    return(
     <div>
@@ -85,13 +92,15 @@ class Game extends React.Component{
         <Header />
             <Container>
             {this.state.data.map(item =>(
-                <ClickItem
-                key={item.id}
-                id={item.id}
-                shake={!this.state.score && this.state.topScore}
-                handleClick= {this.handleItemClick}
-                image={item.image}
-                />
+                <div>
+                    <ClickItem
+                    key={item.id}
+                    id={item.id}
+                    shake={!this.state.score && this.state.topScore}
+                    handleClick= {this.handleItemClick}
+                    image={item.image}
+                    />
+                </div>
             ))}
             </Container>
             <Footer />

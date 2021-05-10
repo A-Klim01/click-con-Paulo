@@ -1,2 +1,4 @@
 # click-con-Paulo
-clicky game with paul leading
+
+Hello, welcome to Clicky game, an application coded by Alojzy 
+
